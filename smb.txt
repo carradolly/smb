@@ -1,0 +1,1 @@
+smbclient //10.10.28.241/Anonymous
