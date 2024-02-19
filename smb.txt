@@ -1,5 +1,6 @@
 smbclient //10.10.28.241/Anonymous
 smbclient -N -L //10.129.14.128
+smbclient -U bob \\\\10.129.42.253\\users
 smbclient //10.129.14.128/notes
 rpcclient -U "user" 10.129.14.128
 cưỡng bức thô bạo: for i in $(seq 500 1100);do rpcclient -N -U "" 10.129.14.128 -c "queryuser 0x$(printf '%x\n' $i)" | grep "User Name\|user_rid\|group_rid" && echo "";done or (samrdump.py .)
